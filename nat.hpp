@@ -43,7 +43,7 @@ struct Add<Z, B> {
 
 template<Nat A, Nat B>
 struct Add<Succ<A>, B> {
-  using result = Add<A, Succ<B>>::result;
+  using result = Succ<typename Add<A, B>::result>;
 };
 
 // Equality

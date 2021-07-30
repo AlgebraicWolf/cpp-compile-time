@@ -19,5 +19,6 @@ int main() {
             Cons<zero,
             Nil>>>>>>;
 
-  print<MergeSort<l>::result>();
+  // print<MergeSort<l>::result>();
+  print<Add<two, four>::result>();
 }
